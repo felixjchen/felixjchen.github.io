@@ -38,11 +38,11 @@
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <span class="d-block d-lg-none">Felix Chen</span>
         <span class="d-none d-lg-block">
-          <!-- <img
+          <img
             class="img-fluid img-profile rounded-circle mx-auto mb-2"
             src="img/profile.jpg"
             alt=""
-          /> -->
+          />
         </span>
       </a>
       <button
@@ -62,29 +62,18 @@
             <a class="nav-link js-scroll-trigger" href="#about">About</a>
           </li>
 
+
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#education"
-              >Education</a
+            <a class="nav-link js-scroll-trigger" href="#webwatcher"
+              >Web Watcher</a
             >
           </li>
 
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#experience"
-              >Experience</a
-            >
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+            <a class="nav-link js-scroll-trigger" href="#nitrus">Nitrus</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#awards"
-              >Certifications</a
-            >
+            <a class="nav-link js-scroll-trigger" href="#icecream">Ice Cream</a>
           </li>
         </ul>
       </div>
@@ -98,26 +87,34 @@
         <div class="w-100">
           <h1 class="mb-0">
             Felix Chen
-            <span class="text-primary"></span>
+            <span class="text-primary"> </span>
           </h1>
           <div class="subheading mb-5">
             Toronto, Ontario, Canada · (226) 600-8613 ·
             <a href="mailto:felixchen1998@gmail.com">felixchen1998@gmail.com</a>
           </div>
-          <p class="lead mb-5">
-            Passionate and driven undergraduate with 2.5+ years of industry
-            experience involving SRE, DevOps, full-stack development, public
-            cloud, machine-learning and testing.
+          <p class="lead mb-4">
+            I'm a 4th year undergraduate student at University of Toronto
+            studying <b> computer science </b> and <b> statistics </b>, I enjoy
+            studying machine-learning, software development, computability &
+            complexity.
+          </p>
+          <p class="lead mb-4">
+            I've worked for <b> IBM for 2+ years</b> and Extreme Networks for 4
+            months.
+          </p>
+          <p class="lead mb-4">
+            You can find my socials and personal projects below.
           </p>
           <div class="social-icons">
-            <a title="GitHub" href="https://github.com/felixjchen">
-              <i class="fab fa-github"></i>
-            </a>
             <a
               title="LinkedIn"
               href="https://www.linkedin.com/in/felix-chen-7b3350150/"
             >
               <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a title="GitHub" href="https://github.com/felixjchen">
+              <i class="fab fa-github"></i>
             </a>
             <a
               title="Resume"
@@ -133,286 +130,141 @@
       <hr class="m-0" />
 
       <section
-        class="resume-section p-3 p-lg-5 d-flex justify-content-center"
-        id="education"
+        class="p-3 p-lg-5 d-flex align-items-center"
+        id="webwatcher"
       >
         <div class="w-100">
-          <h2 class="mb-5">Education</h2>
-
-          <div
-            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-          >
-            <div class="resume-content">
-              <h3 class="mb-0">University of Toronto</h3>
-              <div class="subheading mb-3">Bachelor of Science</div>
-              <div>BSc Computer Science, Software Engineering, Co-op</div>
-              <div>Minor Statistics</div>
-              <!-- <p>GPA 3.21 / 4.00</p> -->
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">September 2016 – April 2022 </span>
+          <div class="mb-5">
+            <h2>Web Watcher</h2>
+            <div class="social-icons">
+              <a
+                title="GitHub"
+                href="https://github.com/felixjchen/web-watcher"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a title="Link" href="https://webwatcher.netlify.app/">
+                <i class="fas fa-link"></i>
+              </a>
             </div>
           </div>
+
+          <div class="resume-content">
+            <h3 class="mb-0">Purpose</h3>
+            <div class="subheading mb-3"></div>
+            <p>Monitor webpages for changes and notify users by email</p>
+          </div>
+          <div class="resume-content">
+            <h3 class="mb-0">Features</h3>
+            <div class="subheading mb-3">Scalable</div>
+            <p>
+              Web Watcher is a microservice application following the API
+              gateway design pattern, it consists of 7 JavaScript/Python
+              services and 1 Go Cronjob.
+            </p>
+            <div class="subheading mb-3">Secure</div>
+            <p>
+              Clients use JWT cookies following the refresh_token and
+              access_token strategy.
+            </p>
+            <p>Data at rest is encrypted using Bcrypt.</p>
+            <div class="subheading mb-3">Free</div>
+            <p>
+              Web Watcher is a multi cloud solution using free services from IBM
+              Cloud, AWS, Docker Hub and Netlify. Some notable services are IBM Kubernetes Service, Docker Hub, API Gateway,
+              Cloud Object Storage
+              and CouchDB.
+            </p>
+            <div class="subheading mb-3">Usable</div>
+            <p>
+              React with IBM Carbon Design on the frontend with mobile
+              sizing in mind.
+            </p>
+          </div>
+          
         </div>
       </section>
 
       <hr class="m-0" />
 
       <section
-        class="resume-section p-3 p-lg-5 d-flex justify-content-center"
-        id="experience"
+        class=" p-3 p-lg-5 d-flex align-items-center"
+        id="nitrus"
       >
         <div class="w-100">
-          <h2 class="mb-5">Experience</h2>
-
-          <div
-            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-          >
-            <div class="resume-content">
-              <h3 class="mb-0">Site Reliability Engineer Intern</h3>
-              <div class="subheading mb-3">IBM</div>
-              <p>
-                • Developed customer self service using Kubernetes, Ansible and
-                Kafka, eliminating 15% of Salesforce cases
-              </p>
-              <p>• Reduced toil with Ansible, Powershell, Bash and Python</p>
-              <p>
-                • Maintained SaaS offerings on Kubernetes, Docker Swarm and
-                Windows for 1200+ clients, actioned pager alerts, provisions and
-                modifications
-              </p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">May 2020 - Present</span>
+          <div class="mb-5">
+            <h2>Nitrus</h2>
+            <div class="social-icons">
+              <a title="GitHub" href="https://github.com/felixjchen/Nitrus">
+                <i class="fab fa-github"></i>
+              </a>
+              <a title="Link" href="https://nitrus.azurewebsites.net/">
+                <i class="fas fa-link"></i>
+              </a>
             </div>
           </div>
 
-          <div
-            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-          >
-            <div class="resume-content">
-              <h3 class="mb-0">Information Developer Intern</h3>
-              <div class="subheading mb-3">IBM</div>
-              <p>
-                • Led a Stack Overflow initiative, engineered 10+ dashboards,
-                rewards program and NLC question routing, increasing db2-luw tag
-                watchers by 53%
-              </p>
-
-              <p>
-                • Automated support escalation paging using PagerDuty API, Slack
-                API and cloud functions, saving thousands of hours spent
-                monitoring Slack
-              </p>
-
-              <p>
-                • Delivered a web crawler, wiki downloader and documentation
-                quality checker
-              </p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">September 2019 - April 2020</span>
-            </div>
+          <div class="resume-content">
+            <h3 class="mb-0">Purpose</h3>
+            <div class="subheading mb-3"></div>
+            <p>Vote and listen to a Spotify queue with other users</p>
           </div>
-
-          <div
-            class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5"
-          >
-            <div class="resume-content">
-              <h3 class="mb-0">Software Developer Intern</h3>
-              <div class="subheading mb-3">Extreme Networks</div>
-              <p>
-                • Developed a nightly test suite using Python, Selenium and
-                Chromedriver
-              </p>
-
-              <p>
-                • Supervised 100+ tests running in parallel across 4 CentOS VMs
-              </p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">Janurary 2019 - April 2019</span>
-            </div>
+          <div class="resume-content">
+            <h3 class="mb-0">Features</h3>
+            <div class="subheading mb-3">Integrated</div>
+            <p>
+              Nitrus uses Spotify API to search tracks with your preferences, synchronize playback for the entire room and stop playback on exit.
+            </p>
+            <div class="subheading mb-3">Realtime</div>
+            <p>
+              Nitrus uses socket.io to keep votes, tracks and active users synched across clients.
+            </p>
+            <div class="subheading mb-3">Usable</div>
+            <p>
+              React with IBM Carbon Design on the frontend with mobile
+              sizing in mind.
+            </p>
           </div>
-        </div>
       </section>
 
       <hr class="m-0" />
 
       <section
-        class="resume-section p-3 p-lg-5 d-flex align-items-center"
-        id="projects"
+        class=" p-3 p-lg-5 d-flex align-items-center"
+        id="icecream"
       >
         <div class="w-100">
-          <h2 class="mb-5">Projects</h2>
-
-          <div class="resume-content">
-            <h3 class="mb-0">Web Watcher</h3>
-            <div class="subheading mb-3"></div>
-            <p>
-              • Created a microservice application to notify users upon website
-              changes
-            </p>
-            <p>
-              • Leveraged Kubernetes, React, JWT, AWS, IBM Cloud, OpenCV and
-              Puppeteer
-            </p>
+          <div class="mb-5">
+            <h2>Ice Cream</h2>
+            <div class="social-icons">
+              <a title="GitHub" href="https://github.com/felixjchen/Ice-Cream">
+                <i class="fab fa-github"></i>
+              </a>
+              <a title="Link" href="https://screenshare.netlify.app/">
+                <i class="fas fa-link"></i>
+              </a>
+            </div>
           </div>
 
           <div class="resume-content">
-            <h3 class="mb-0">Nitrus</h3>
+            <h3 class="mb-0">Purpose</h3>
             <div class="subheading mb-3"></div>
-            <p>
-              • Engineered a realtime web application for users to vote and
-              listen to a Spotify queue
-            </p>
-            <p>
-              • Utilized SocketIO, React, TypeScript, Spotify API and IBM Carbon
-              Design
-            </p>
+            <p></p>
           </div>
-
           <div class="resume-content">
-            <h3 class="mb-0">Ice Cream</h3>
-            <div class="subheading mb-3"></div>
+            <h3 class="mb-0">Features</h3>
+            <div class="subheading mb-3">Peer to peer</div>
             <p>
-              • Developed a peer to peer web application for users to stream
-              video and audio
-            </p>
+             </p>
+            <div class="subheading mb-3">Usable</div>
             <p>
-              • Used PeerJS, Screen Capture API, jQuery, Netlify and IBM Carbon
-              Design
-            </p>
-          </div>
-
-          <div class="resume-content">
-            <h3 class="mb-0">Minesweeper Q-Learning</h3>
-            <div class="subheading mb-3"></div>
-            <p>
-              • Implemented the Q-Learning algorithm to play 4x4 Minesweeper
-              using NumPy
+              React with IBM Carbon Design on the frontend with mobile
+              sizing in mind.
             </p>
           </div>
-
-          <div class="resume-content">
-            <h3 class="mb-0">Neural Networks</h3>
-            <div class="subheading mb-3"></div>
-            <p>• Built neural networks with NumPy batch operations</p>
-
-            <p>• User controls shape, activation and loss functions</p>
-          </div>
-        </div>
       </section>
 
       <hr class="m-0" />
-
-      <section
-        class="resume-section p-3 p-lg-5 d-flex align-items-center"
-        id="skills"
-      >
-        <div class="w-100">
-          <h2 class="mb-5">Skills</h2>
-
-          <div class="subheading mb-3">Languages</div>
-          <ul>
-            <li>JavaScript, TypeScript, HTML and CSS</li>
-            <li>Python</li>
-            <li>Java</li>
-            <li>C</li>
-            <li>Bash, PowerShell</li>
-            <li>Haskell</li>
-            <li>LaTeX</li>
-          </ul>
-
-          <div class="subheading mb-3">Frontend</div>
-          <ul>
-            <li>
-              React, jQuery, Cookies, Boostrap, Chart.js, Material Design,
-              Carbon Design
-            </li>
-          </ul>
-
-          <div class="subheading mb-3">Backend</div>
-          <ul>
-            <li>Express, Flask, Socket.IO, JWT, Node.js</li>
-          </ul>
-
-          <div class="subheading mb-3">Databases</div>
-          <ul>
-            <li>PostgreSQL, MongoDB, CouchDB</li>
-          </ul>
-
-          <div class="subheading mb-3">DevOps</div>
-          <ul>
-            <li>Kubernetes, Docker, Ansible</li>
-          </ul>
-
-          <div class="subheading mb-3">Cloud</div>
-          <ul>
-            <li>AWS, Azure, GCP, IBM Cloud</li>
-          </ul>
-
-          <div class="subheading mb-3">Machine Learning</div>
-          <ul>
-            <li>
-              NumPy, Classification, Regression, Clustering, Reinforcement
-              Learning, Neural Networks
-            </li>
-          </ul>
-
-          <div class="subheading mb-3">Operating Systems</div>
-          <ul>
-            <li>Linux, Windows, MacOS</li>
-          </ul>
-        </div>
-      </section>
-
-      <hr class="m-0" />
-
-      <section
-        class="resume-section p-3 p-lg-5 d-flex align-items-center"
-        id="awards"
-      >
-        <div class="w-100">
-          <h2 class="mb-5">Certifications</h2>
-          <ul class="fa-ul mb-0">
-            <li>
-              <a
-                href="https://www.youracclaim.com/badges/d2b3b67c-f186-4165-b6e4-32fe78a6235a/linked_in_profile"
-              >
-                Containers, K8s and Istio on IBM Cloud</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.youracclaim.com/badges/c757b93f-e69d-4517-8db6-226bd9fb0998/linked_in_profile"
-              >
-                Beyond the Basics: Istio and IBM Cloud Kubernetes Service</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.youracclaim.com/badges/c3c029d8-9eb2-4c20-a8a5-c2c9415ec4b5/public_url"
-              >
-                Getting started with Microservices with Istio and IBM Cloud
-                Kubernetes Service</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.youracclaim.com/badges/90629e78-b58a-4a4e-9ff7-df5c8cdc60ce/linked_in_profile"
-                >IBM Cloud Kubernetes Service</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.youracclaim.com/badges/ee4b5dc3-7b63-439d-b68d-3b28de5ae910/linked_in_profile"
-                >Docker Essentials: A Developer Introduction</a
-              >
-            </li>
-          </ul>
-        </div>
-      </section>
     </div>
 
     <!-- Bootstrap core JavaScript -->
