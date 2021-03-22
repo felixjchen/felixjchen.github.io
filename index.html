@@ -59,21 +59,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
-          </li>
-
-
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#webwatcher"
-              >Web Watcher</a
-            >
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#nitrus">Nitrus</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#icecream">Ice Cream</a>
+            <a class="nav-link js-scroll-trigger" href="#about"></a>
           </li>
         </ul>
       </div>
@@ -95,18 +81,23 @@
           </div>
           <p class="lead mb-4">
             I'm a 4th year undergraduate student at University of Toronto
-            studying <b> computer science </b> and <b> statistics</b>, I enjoy
-            machine-learning, software development, computability &
-            complexity.
+            studying <b> computer science </b> and <b> statistics</b>
           </p>
           <p class="lead mb-4">
             I've worked for <b> IBM for 2+ years</b> and Extreme Networks for 4
             months.
           </p>
           <p class="lead mb-4">
-            You can find my socials and personal projects below.
+            You can find my resume and contact information below.
           </p>
           <div class="social-icons">
+            <a
+              title="Resume"
+              href="./Felix_Chen_Resume.pdf"
+              download="Felix_Chen_Resume.pdf"
+            >
+              <i class="fas fa-file"></i>
+            </a>
             <a
               title="LinkedIn"
               href="https://www.linkedin.com/in/felix-chen-7b3350150/"
@@ -116,155 +107,9 @@
             <a title="GitHub" href="https://github.com/felixjchen">
               <i class="fab fa-github"></i>
             </a>
-            <a
-              title="Resume"
-              href="./Felix_Chen_Resume.pdf"
-              download="Felix_Chen_Resume.pdf"
-            >
-              <i class="fas fa-file"></i>
-            </a>
           </div>
         </div>
       </section>
-
-      <hr class="m-0" />
-
-      <section
-        class="p-3 p-lg-5 d-flex align-items-center"
-        id="webwatcher"
-      >
-        <div class="w-100">
-          <div class="mb-5">
-            <h2>Web Watcher</h2>
-            <div class="social-icons">
-              <a
-                title="GitHub"
-                href="https://github.com/felixjchen/web-watcher"
-              >
-                <i class="fab fa-github"></i>
-              </a>
-              <a title="Link" href="https://webwatcher.netlify.app/">
-                <i class="fas fa-link"></i>
-              </a>
-            </div>
-          </div>
-
-          <div class="resume-content">
-            <h3 class="mb-0">Purpose</h3>
-            <div class="subheading mb-3"></div>
-            <p>Monitor webpages for changes, highlight changes with bounding boxes then notify users by email</p>
-          </div>
-          <div class="resume-content">
-            <h3 class="mb-0">Features</h3>
-            <div class="subheading mb-3">Decoupled</div>
-            <p>
-              Web Watcher is a microservice application following the API
-              gateway design pattern, it consists of 7 JavaScript/Python
-              services and 1 Go Cronjob.
-            </p>
-            <div class="subheading mb-3">Secure</div>
-            <p>
-              Clients use JWT cookies following the refresh_token and
-              access_token strategy.
-            </p>
-            <p>Data at rest is encrypted using Bcrypt.</p>
-            <div class="subheading mb-3">Free</div>
-            <p>
-              Web Watcher is a multi cloud solution using free services from IBM
-              Cloud, AWS, Docker Hub and Netlify. Some notable services are IBM Kubernetes Service, Docker Hub, API Gateway,
-              Cloud Object Storage
-              and CouchDB.
-            </p>
-            <div class="subheading mb-3">Usable</div>
-            <p>
-              React with IBM Carbon Design on the frontend with mobile
-              sizing in mind.
-            </p>
-          </div>
-          
-        </div>
-      </section>
-
-      <hr class="m-0" />
-
-      <section
-        class=" p-3 p-lg-5 d-flex align-items-center"
-        id="nitrus"
-      >
-        <div class="w-100">
-          <div class="mb-5">
-            <h2>Nitrus</h2>
-            <div class="social-icons">
-              <a title="GitHub" href="https://github.com/felixjchen/Nitrus">
-                <i class="fab fa-github"></i>
-              </a>
-              <a title="Link" href="https://nitrus.azurewebsites.net/">
-                <i class="fas fa-link"></i>
-              </a>
-            </div>
-          </div>
-
-          <div class="resume-content">
-            <h3 class="mb-0">Purpose</h3>
-          
-            <div class="subheading mb-3"></div>
-            <p>Vote for tracks in a Spotify queue with others while listening to the top voted track</p>
-          </div>
-          <div class="resume-content">
-            <h3 class="mb-0">Features</h3>
-            <div class="subheading mb-3">Integrated</div>
-            <p>
-              Nitrus uses Spotify API to search tracks with your preferences, synchronize playback for the entire room and stop playback on exit.
-            </p>
-            <div class="subheading mb-3">Realtime</div>
-            <p>
-              Nitrus uses Socket.IO to keep votes, tracks and active users synched across clients.
-            </p>
-            <div class="subheading mb-3">Usable</div>
-            <p>
-              React with IBM Carbon Design on the frontend with mobile
-              sizing in mind.
-            </p>
-          </div>
-      </section>
-
-      <hr class="m-0" />
-
-      <section
-        class=" p-3 p-lg-5 d-flex align-items-center"
-        id="icecream"
-      >
-        <div class="w-100">
-          <div class="mb-5">
-            <h2>Ice Cream</h2>
-            <div class="social-icons">
-              <a title="GitHub" href="https://github.com/felixjchen/Ice-Cream">
-                <i class="fab fa-github"></i>
-              </a>
-              <a title="Link" href="https://screenshare.netlify.app/">
-                <i class="fas fa-link"></i>
-              </a>
-            </div>
-          </div>
-
-          <div class="resume-content">
-            <h3 class="mb-0">Purpose</h3>
-            <div class="subheading mb-3"></div>
-            <p>Stream video and audio to other users</p>
-          </div>
-          <div class="resume-content">
-            <h3 class="mb-0">Features</h3>
-            <div class="subheading mb-3">Peer to peer</div>
-            <p> Ice Cream uses PeerJS, a webRTC wrapper, all code is on the client side.</p>
-            <div class="subheading mb-3">Usable</div>
-            <p>
-              React with IBM Carbon Design on the frontend with mobile
-              sizing in mind.
-            </p>
-          </div>
-      </section>
-
-      <hr class="m-0" />
     </div>
 
     <!-- Bootstrap core JavaScript -->
