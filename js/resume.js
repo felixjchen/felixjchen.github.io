@@ -24,5 +24,5 @@
   // $('body').scrollspy({
   //   target: '#sideNav'
   // });
-  $(".social-icons a").tooltip({ show: { effect: "blind", duration: 800 } });
+  $(".social-icons a").tooltip();
 })(jQuery); // End of use strict

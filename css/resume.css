@@ -9,12 +9,9 @@ body {
     "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Noto Color Emoji";
   padding-top: 54px;
-  color: black;
+  color: rgb(197, 197, 197);
 
-  /* background-color: #343a40; */
-  background-image: linear-gradient(#343a40, #4c5258);
-
-  filter: invert(0.8);
+  background-image: linear-gradient(rgb(51, 55, 60), rgb(67, 72, 78));
 }
 
 @media (min-width: 992px) {
@@ -35,7 +32,7 @@ h6 {
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   text-transform: uppercase;
-  color: #343a40;
+  color: rgb(163, 159, 155);
 }
 
 h1 {
@@ -69,8 +66,8 @@ p.lead {
   display: inline-block;
   height: 3.5rem;
   width: 3.5rem;
-  background-color: #495057;
-  color: #fff !important;
+  background-color: #b6afa8;
+  color: rgb(45, 45, 45) !important;
   border-radius: 20%;
   text-align: center;
   font-size: 1.5rem;
@@ -83,7 +80,7 @@ p.lead {
 }
 
 .social-icons a:hover {
-  background-color: #343a40;
+  background-color: rgb(149, 145, 141);
 }
 
 .dev-icons {
@@ -91,7 +88,7 @@ p.lead {
 }
 
 .dev-icons .list-inline-item i:hover {
-  color: #343a40;
+  color: rgb(149, 145, 141);
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
@@ -101,7 +98,7 @@ p.lead {
 }
 
 #sideNav .navbar-toggler:focus {
-  outline-color: #343a40;
+  outline-color: rgb(149, 145, 141);
 }
 
 @media (min-width: 992px) {
@@ -171,11 +168,11 @@ section.resume-section .resume-item .resume-date {
 }
 
 .bg-primary {
-  background-color: #343a40 !important;
+  background-color: rgb(149, 145, 141) !important;
 }
 
 .text-primary {
-  color: #343a40 !important;
+  color: rgb(149, 145, 141) !important;
 }
 
 a {
@@ -185,9 +182,17 @@ a {
 a:hover,
 a:focus,
 a:active {
-  color: #343a40;
+  color: rgb(149, 145, 141);
 }
 
 hr {
   border-top: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.tooltip-inner {
+  background-color: rgb(149, 145, 141);
+  color: rgb(29, 29, 29);
+}
+.bs-tooltip-bottom .arrow::before {
+  border-bottom-color: rgb(149, 145, 141);
 }
