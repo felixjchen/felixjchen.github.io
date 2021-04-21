@@ -9,7 +9,7 @@ body {
     "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Noto Color Emoji";
   padding-top: 54px;
-  color: rgb(197, 197, 197);
+  color: rgb(230, 230, 230);
 
   background-image: linear-gradient(rgb(51, 55, 60), rgb(67, 72, 78));
 }
@@ -32,7 +32,7 @@ h6 {
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   text-transform: uppercase;
-  color: rgb(163, 159, 155);
+  color: rgb(158, 158, 158);
 }
 
 h1 {
@@ -186,7 +186,7 @@ a:active {
 }
 
 hr {
-  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .tooltip-inner {
