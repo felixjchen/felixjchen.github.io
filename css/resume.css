@@ -69,7 +69,7 @@ p.lead {
   width: 3.5rem;
   background-color: #495057;
   color: #fff !important;
-  border-radius: 100%;
+  border-radius: 20%;
   text-align: center;
   font-size: 1.5rem;
   line-height: 3.5rem;
@@ -184,4 +184,15 @@ a:hover,
 a:focus,
 a:active {
   color: #343a40;
+}
+
+/* #projects > div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+} */
+
+#projects > div > p {
+  /* margin-bottom: 0; */
+  /* margin-left: 0.8rem; */
 }
