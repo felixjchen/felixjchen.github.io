@@ -189,6 +189,12 @@ h3 > a {
   color: #b3d7ff;
 }
 
+h3 > a:hover,
+h3 > a:focus,
+h3 > a:active {
+  color: #b3d7ff;
+}
+
 hr {
   border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
