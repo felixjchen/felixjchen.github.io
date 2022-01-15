@@ -185,6 +185,10 @@ a:active {
   color: rgb(149, 145, 141);
 }
 
+h3 > a {
+  color: #b3d7ff;
+}
+
 hr {
   border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
