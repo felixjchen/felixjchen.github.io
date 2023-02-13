@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+      shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Trading Time For Space With Zk-SNARKs</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom fonts for this template -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i"
+      rel="stylesheet"
+    />
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="../css/resume.css" rel="stylesheet" />
+    <!-- <link rel="icon" type="image/svg+xml" href="./cil-at.svg" /> -->
+    <link rel="icon" href="../android-chrome-512x512.png" />
+  </head>
+
+  <body id="page-top">
+    <div class="container-fluid p-0">
+      <section
+        class="resume-section p-3 p-lg-5 d-flex align-items-center"
+        id="about"
+      >
+        <p>How many computations are repeated ? Probably alot right.</p>
+        <p>e.g. print("Hello world")</p>
+        <p>e.g. add(1,2)</p>
+        <p>e.g. add(add(1,2), 3)</p>
+        <p>
+          In software, we care about the time cost of programs deeply. We're
+          here for a good time, not a long time.
+        </p>
+        <p>
+          In software, we also appreciate the idea of "good enough".
+          Cryptography (hashing and encryption) appreciates when a hash or
+          signature is "good enough".
+        </p>
+        <p>
+          A computation can also be "good enough". Say I trust you to give me
+          add(1,2) so I can sum([1,2,3,4,5,6,7,8,9,10]) quickly. How good is
+          your add(1,2)? If you are 99.999...% reliable (great friend), then I
+          can say that is good enough, and continue with my computation
+          sum([<u>3</u>,3,4,5,6,7,8,9,10]). Now my summation is 99.999...%
+          reliable (if I am not self-sabotaging and a flawless developer).
+        </p>
+        <!-- <p>
+          When we say the computation is "good enough", 
+        </p> -->
+        <p>
+          We have arrived at some form of probablistic computation. We cannot be
+          certain our result is perfect, but it can be good enough (it can be
+          the case that you are such a trustworthy friend, that I can trust you
+          for many lifetimes)! Probablistic in the sense that our answer is
+          correct a percentage of the time, not probablistic in the sense of the
+          answer is "close enough".
+        </p>
+        <p>
+          I'm going to invoke Zk-SNARKs as a black-box, I don't understand how
+          they work, but I can appreciate the problems they solve. Further
+          reading: https://vitalik.ca/general/2021/01/26/snarks.html
+        </p>
+        <p>
+          There are two roles in the Zk-SNARK scheme: a prover and a verifier.
+          The prover's job is to prove they know something by providing a proof,
+          the verifier's job is to verify that the prover is being honest by
+          verifying a proof. Zero Knowledge because the prover does not give up
+          the nature of that something, it may be secret (or not worth computing
+          ;)).
+        </p>
+        <p>
+          e.g. https://en.wikipedia.org/wiki/Zero-knowledge_proof > Ali Baba
+          cave
+        </p>
+        <p>
+          A key advantage for Zk-SNARKs is that verifying a proof is fast,
+          faster than the time consumed by the prover.
+        </p>
+
+        <p>Define:</p>
+        <p>x - arguments for a function</p>
+        <p>f - fancy function</p>
+        <p>f(x) - fancy function evaluated at argument x</p>
+
+        <p>
+          In this case, the role of the prover will be delegated to my
+          trustworthy friends. Provers will take: x,f and compute f(x) alongside
+          a proof. The role of the verifier will be for the lazy people, where
+          verifying f(x)'s proof is sufficient to rely on f(x).
+        </p>
+
+        <p>e.g. sum([1,2,3,4,5,6,7,8,9,10])</p>
+        <p>friend provides add(1,2) = 3 alongside a proof</p>
+        <p>
+          I verify the proof (which can be faster than performing add(1,2)
+          myself). If the proof checks out, I will cheat and return
+          sum([<u>3</u>,3,4,5,6,7,8,9,10]).
+        </p>
+
+        <p>
+          Generically, this appears as a massive key-value store (yes another
+          one). Keys include the program, f, and the arguments, x. Values map to
+          the result, f(x) and a nice proof for people to stress over.
+        </p>
+        <p>e.g. sum([1,2,3,4,5,6,7,8,9,10])</p>
+        <p>TABLE</p>
+        <p>x=[1,2,3,4,5], f=sum => f(x) = 15, proof_0</p>
+        <p>x=[6,7,8,9,10], f=sum => f(x) = 40, proof_1</p>
+        <p>x=[15,40], f=add => f(x) = 55, proof_2</p>
+        <p>
+          A smart and lazy individual would rather verify 3 Zk-SNARKs over
+          actually performing 10 additions. Especially when verification is
+          faster than the actual computation.
+        </p>
+        <p>
+          This is the general idea, a massive key-value store for all
+          computations that aren't worth repeating. We will trade space for
+          time, a typical exchange.
+        </p>
+        <p>Further ideas:</p>
+        <p>
+          How do we standardize inputs ? functions ? ... A standard programming
+          language or set of instructions.
+        </p>
+        <p>Where do we put this in the stack ? Kernel level ?</p>
+        <p>
+          When is "good enough" good? Probably not during surgery, space flight
+          or taxes. Maybe during graphics computations, ML evaluation or
+          cheating at NP-Complete problems.
+        </p>
+        <p>How many beers is too many?</p>
+      </section>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/resume.js"></script>
+  </body>
+</html>
